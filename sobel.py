@@ -50,7 +50,6 @@ def dir_threshold(img, sobel_kernel=3, thresh=(0, np.pi/2)):
     # 3) Calculate the magnitude 
     abs_sobelx = np.absolute(sobelx)
     abs_sobely = np.absolute(sobely)
-    #abs_sobelxy = np.sqrt(np.power(sobelx, 2) + np.power(sobely, 2))
     # 4) Use np.arctan2(abs_sobely, abs_sobelx) to calculate the direction of the gradient
     direction = np.arctan2(abs_sobely, abs_sobelx)
     # 5) Create a binary mask where direction thresholds are met
