@@ -12,7 +12,7 @@ def display_lines(image,lines):
     if lines is not None:
         for line in lines:
             x1,y1,x2,y2 = line.reshape(4)
-            cv2.line(line_image,(x1,y1),(x2,y2),(22,100,8),1)
+            cv2.line(line_image,(x1,y1),(x2,y2),(22,100,8),5)
     return line_image
 
 image = cv2.imread("test_image.jpg")
